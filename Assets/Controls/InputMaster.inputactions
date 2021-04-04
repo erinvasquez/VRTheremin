@@ -1,0 +1,69 @@
+{
+    "name": "InputMaster",
+    "maps": [
+        {
+            "name": "Theremin",
+            "id": "55e34f2b-8b74-4a26-b937-b654ee9c8c46",
+            "actions": [
+                {
+                    "name": "Play",
+                    "type": "Button",
+                    "id": "abc8de34-35eb-4e23-a307-ccff59750eb4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "MousePosition",
+                    "type": "Value",
+                    "id": "c195c633-a52f-4ae9-9aad-b7782bdd780f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c6c34254-6a38-4951-b466-a9221e929f6a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press,Hold(duration=0.1)",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "Play",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cccf49de-0df8-4849-b559-ade9bc889cff",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard and Mouse",
+            "bindingGroup": "Keyboard and Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
